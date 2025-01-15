@@ -66,8 +66,9 @@ class UserBuilder extends FluentBuilder
 
 You can convert the built instance to an array or an object using the `toArray()` and `toObject()` methods.
 
+#### Return Array
+
 ```php
-// use and return an array
 $userArray = UserBuilder::build()
     ->setName('PHP Builders')
     ->setEmail('hello@phpbuilders.tetst')
@@ -77,8 +78,11 @@ $userArray = UserBuilder::build()
 getType($userArray) // Array
 $userArray['name'] // PHP Builders
 $userArray['email'] // hello@phpbuilders.tetst
+```
 
-// use and return object
+#### Return Object
+
+```php
 $userObject = UserBuilder::build()
     ->setName('John Doe')
     ->setEmail('john@example.com')
