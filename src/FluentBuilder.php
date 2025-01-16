@@ -2,9 +2,12 @@
 
 namespace Omaralalwi\PhpBuilders;
 
-use Omaralalwi\PhpBuilders\Traits\{Buildable, Arrayable, Objectable};
+use Omaralalwi\PhpBuilders\Traits\{Buildable, Arrayable, Objectable, Jsonable};
 
 class FluentBuilder
 {
-    use Buildable, Arrayable, Objectable;
+    use Buildable,
+        Arrayable,
+        Objectable,
+        Jsonable;
 }
