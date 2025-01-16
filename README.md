@@ -84,8 +84,8 @@ $userArray['email'] // hello@phpbuilders.tetst
 
 ```php
 $userObject = UserBuilder::build()
-    ->setName('John Doe')
-    ->setEmail('john@example.com')
+    ->setName('PHP Builders')
+    ->setEmail('hello@phpbuilders.tetst')
     ->sendEmail()
     ->toObject();
 
